@@ -6,15 +6,26 @@
 /* This changes the whole page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #e6e6e6;
     margin: 0;
     padding: 0;
     color: #333333;
 }
 
+/* ===== ONE BIG CONTAINER FOR EVERYTHING ===== */
+/* this wraps the header, sections, and footer into a single card */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* ===== HEADER SECTION ===== */
 .header {
-    background-color: #6c63ff;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -46,80 +57,42 @@ body {
 .tagline {
     font-style: italic;
     font-size: 18px;
+    color: #cccccc;
 }
 
-/* ===== TAB BUTTONS ROW ===== */
-.tab-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 25px auto 0 auto;
-}
-
-/* the buttons themselves */
-.tab-link {
-    background-color: white;
-    color: #6c63ff;
-    border: 2px solid #6c63ff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 15px;
-    cursor: pointer;
-
-    /* this makes the color change smooth instead of instant */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-/* when I hover my mouse over a tab button */
-.tab-link:hover {
-    background-color: #dcd9ff;
-    transform: translateY(-2px);
-}
-
-/* the button for the tab that is currently open */
-.tab-link.active {
-    background-color: #6c63ff;
-    color: white;
-}
-
-/* ===== TAB CONTENT (the pages themselves) ===== */
-/* by default, every tab page is hidden */
-.tab-content {
-    display: none;
-
-    /* these two lines + the ones inside ".active" below
-       are what create the fade + slide-in transition */
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-/* only the tab with class "active" will show on the screen */
-.tab-content.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ===== EACH SECTION BOX ===== */
+/* ===== EACH SECTION (now sits inside the container, no more card of its own) ===== */
 .section {
-    background-color: white;
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    border-bottom: 1px solid #dddddd;
+
+    /* smooth fade-in feel when hovering a section */
+    transition: background-color 0.3s ease;
+}
+
+/* the last section shouldn't need a bottom line since the footer follows it */
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section:hover {
+    background-color: #f7f7f7;
 }
 
 .section h2 {
-    color: #6c63ff;
-    border-bottom: 2px solid #6c63ff;
+    color: #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
     padding-bottom: 5px;
+    display: inline-block;
 }
 
 .section ul {
     line-height: 1.8;
+    list-style-type: square;
+    color: #444444;
+}
+
+.section p {
+    color: #444444;
 }
 
 /* ===== GALLERY SECTION ===== */
@@ -127,6 +100,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .gallery-pic {
@@ -134,19 +109,24 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    /* turns each photo grayscale so it matches the black/white/gray theme */
+    filter: grayscale(100%);
 
-    /* smooth zoom-in effect when hovering a gallery photo */
-    transition: transform 0.3s ease;
+    /* smooth zoom + color-in effect when hovering a gallery photo */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .gallery-pic:hover {
     transform: scale(1.05);
+    /* photo goes back to full color on hover, as a nice little surprise */
+    filter: grayscale(0%);
 }
 
 /* ===== FOOTER SECTION ===== */
 .footer {
     text-align: center;
     padding: 20px;
-    color: #777777;
+    background-color: #1a1a1a;
+    color: #cccccc;
     font-size: 14px;
 }
