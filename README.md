@@ -1,4 +1,4 @@
-# 🌐 Cloud-Based Web Development — Midterm Portfolio
+# 🌐 Cloud-Based Web Development — Midterm Portfolio 
 
 Welcome to my repository for **BSCS 3B - Cloud-Based Web Development**. This repository houses all my laboratory exercises, projects, and web development tasks completed during the midterm term.
 
