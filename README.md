@@ -9,7 +9,7 @@ Welcome to my repository for **BSCS 3B - Cloud-Based Web Development**. This rep
 - **Name:** John David Morandante
 - **Course & Section:** BSCS 3B
 - **Subject:** Cloud-Based Web Development
-- **Instructor:** [Instructor's Name]
+- **Instructor:** Japhet Pagarigan
 - **Repository:** [BSCS3BLabs-Morandante](https://github.com/JohnDavidMorandante/BSCS3BLabs-Morandante)
 
 ---
