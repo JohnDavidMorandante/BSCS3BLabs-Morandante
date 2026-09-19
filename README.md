@@ -28,17 +28,17 @@ Welcome to my repository for **BSCS 3B - Cloud-Based Web Development**. This rep
 
 This repository is organized into distinct branches and directories for each laboratory exercise:
 
-| Branch / Directory | Topic / Description                             | Key Technologies        |
-| ------------------ | ----------------------------------------------- | ----------------------- |
-| Home               | Main landing page & portfolio documentation     | Markdown                |
-| Lab1               | Introduction to Web Development & Basic Layouts | HTML5, CSS3             |
-| Lab2               | Responsive Web Design & Styling                 | CSS Grid, Flexbox       |
-| Lab3               | Interactive Web Elements                        | JavaScript              |
-| Lab4               | DOM Manipulation & Event Handling               | JavaScript, CSS         |
-| Lab5               | Dynamic Web Forms & UI State Controls           | HTML, CSS, JavaScript   |
-| Lab6               | Grading System & Logic Implementation           | PHP, HTML               |
-| Lab7               | Server-Side Web Scripting                       | PHP, MySQL              |
-| Lab8               | PHP Dashboard & User Sessions                   | PHP, Session Management |
+| Branch / Directory | Topic / Description                             | 
+| ------------------ | ----------------------------------------------- |
+| Home               | Main landing page & portfolio documentation     |
+| Lab1               | Introduction to Web Development & Basic Layouts |
+| Lab2               | Responsive Web Design & Styling                 |
+| Lab3               | Interactive Web Elements                        |
+| Lab4               | DOM Manipulation & Event Handling               |
+| Lab5               | Dynamic Web Forms & UI State Controls           |
+| Lab6               | Grading System & Logic Implementation           |
+| Lab7               | Server-Side Web Scripting                       |
+| Lab8               | PHP Dashboard & User Sessions                   | 
 
 ---
 
